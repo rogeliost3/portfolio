@@ -1,83 +1,114 @@
 <!DOCTYPE html>
 <html lang="es-ES">
-    <head>
-        <title>Porfolio</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="css/estilos.css"/>
-     </head>
 
-    <body>
-        <header>
-            <nav>
-                <p class="title-1">Portfolio personal</p>
-                <ul>
-                    <li class="nav-link"><a href="index.html">Inicio</a></li>
-                    <li class="nav-link"><a href="projects.html">Proyectos</a></li>
-                    <li class="nav-link"><a href="contacts.html">Contacto</a></li>  
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section id="user-info">
-                
-                <img src="images/girl.jpg" width="320px" alt="Chica" class="profile-image">
-                
-                <h1 class="profile-title">Lara Dayana Rojo</h1>
-                <p class="p-description">
-                    Lorem fistrum a gramenawer de la pradera diodeno. Amatomaa fistro condemor no te digo trigo por no llamarte Rodrigor ahorarr. Ahorarr va usté muy cargadoo por la gloria de mi madre a gramenawer benemeritaar caballo blanco caballo negroorl. Pecador está la cosa muy malar quietooor va usté muy cargadoo. Quietooor sexuarl se calle ustée papaar papaar. Torpedo se calle ustée no puedor condemor está la cosa muy malar la caidita. Mamaar caballo blanco caballo negroorl mamaar la caidita qué dise usteer benemeritaar. Benemeritaar caballo blanco caballo negroorl pecador ahorarr pupita pecador te voy a borrar el cerito pupita apetecan no te digo trigo por no llamarte Rodrigor hasta luego Lucas. De la pradera mamaar me cago en tus muelas papaar papaar está la cosa muy malar condemor ahorarr no puedor.
+<head>
+    <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/estilos.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <p>PORTFOLIO PERSONAL</p>
+            <ul>
+                <li class="active"><a  href="index.html">Inicio</a></li>
+                <li><a href="projects.html">Proyectos</a></li>
+                <li><a href="contacts.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="profile">
+
+            <div id="foto">
+                <img src="images/girl.jpg" alt="Mi foto">
+            </div>
+
+            <div id="info">
+                <h1 class="info-title">Lara Dayana Rojo</h1>
+                <p class="info-text">
+                    Lorem fistrum a gramenawer de la pradera diodeno. Amatomaa fistro condemor no te digo trigo por no
+                    llamarte Rodrigor ahorarr. Ahorarr va usté muy cargadoo por la gloria de mi madre a gramenawer
+                    benemeritaar caballo blanco caballo negroorl. Pecador está la cosa muy malar quietooor va usté muy
+                    cargadoo. Quietooor sexuarl se calle ustée papaar papaar. Torpedo se calle ustée no puedor condemor
+                    está la cosa muy malar la caidita. Mamaar caballo blanco caballo negroorl mamaar la caidita qué dise
+                    usteer benemeritaar. Benemeritaar caballo blanco caballo negroorl pecador ahorarr pupita pecador te
+                    voy a borrar el cerito pupita apetecan no te digo trigo por no llamarte Rodrigor hasta luego Lucas.
+                    De la pradera mamaar me cago en tus muelas papaar papaar está la cosa muy malar condemor ahorarr no
+                    puedor.
                 </p>
+            </div>
 
-            </section>
-            <section id="contact">
-                <form id="contact-form">
-                    <fieldset>
-                        <legend>Datos de contacto</legend>
-                        <fielset>
-                        <label for="name">Nombre</label>
-                        <input type="text" name="name" id="name">
-                        <label for="edad">Edad</label>
-                        <input type="number" name="age" id="age">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email">
-                    </fielset>
-                    <fieldset>
-                        <legend>Datos opcionales</legend>
-                        <label for="language">Idioma</label>
+        </section>
+        <section id="contact">
+            <form id="contact-form">
+                <fieldset>
+                    <legend>Datos de contacto</legend>
+                    <div>
+                        <label for="name">Nombre:</label>
+                        <input type="text" name="name" id="name" maxlength="50" required>
+                    </div>
+                    <div>
+                        <label for="age">Edad:</label>
+                        <input type="number" name="age" id="age" min="1" max="150" size="4" maxlength="3" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+
+                </fieldset>
+                <fieldset>
+                    <legend>Datos opcionales</legend>
+                    <div class="language-container">
+                        <label for="language">Idioma:</label>
                         <select name="language" id="language">
                             <option value="es" selected>Castellano</option>
                             <option value="en">Ingles</option>
                             <option value="it">Italiano</option>
                         </select>
-                    </fieldset>
-                        <label for ="subscribe">Quiere suscribirse a nuestra newsletter?</label>
-                        <input type="checkbox" name="subscribe" id="subscribe">
-                        <div class="team">
-                            <label for="team">Equipo favorito</label>
-                            <label for="team1">Athletic</label>
-                            <input type="radio" name="team" id="team1" value="Athetic" checked>
-                            <label for="team2">Real sociedad</label>
-                            <input type="radio" name="team" id="team2" value="Real">
-                        </div>
-                    </fieldset>
+                    </div>
 
-                </form>
-            </section>
-        </main>
-        <footer>
-            <ul>
-                <li class="li-contact">
-                    <a href="https://linkedin.com">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                </li>
-                <li class="li-contact">
-                    <a href="https://x.com">
-                        <i class="fa-brands fa-x-twitter"></i>
-                    </a>
-                </li>
-            </ul>
-        </footer>
-    </body>
+                    <div class="subscrip-container">
+                        <input type="checkbox" id="subscribe" name="subscribe" >
+                        <label for="subscribe">Quiere suscribirse a nuestra newsletter?</label>
+                    </div>
+
+                    <div class="equipo-container">
+                        <label class="equipo-label" for="team">Equipo favorito:</label>
+                        <div class="equipo-radios">
+                            <input type="radio" name="team" id="team1" value="Athetic" checked>
+                            <label for="team1">Athletic</label>
+                            <input type="radio" name="team" id="team2" value="Real">
+                            <label for="team2">Real sociedad</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <button type="submit" name="send">Enviar</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li>
+                <a href="https://linkedin.com">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://x.com">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
 </html>
