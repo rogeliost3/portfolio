@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <p>PORTFOLIO PERSONAL</p>
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./projects.html">Proyectos</a></li>
+                <li class="active"><a href="./contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <h2>Contacto</h2>
+    </header>
+    <main>
+        <section id="contact">
+            <form id="contact-form">
+                <fieldset class="contact-data">
+                    <legend>Datos de contacto</legend>
+                    <div>
+                        <label for="name">Nombre:</label>
+                        <input type="text" name="name" id="name" maxlength="50" required>
+                    </div>
+                    <div>
+                        <label for="age">Edad:</label>
+                        <input type="number" name="age" id="age" min="1" max="150" size="4" maxlength="3" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+
+                </fieldset>
+                <fieldset class="contact-opt">
+                    <legend>Datos opcionales</legend>
+                    <div class="language-container">
+                        <label for="language">Idioma:</label>
+                        <select name="language" id="language">
+                            <option value="es" selected>Castellano</option>
+                            <option value="en">Ingles</option>
+                            <option value="it">Italiano</option>
+                        </select>
+                    </div>
+
+                    <div class="subscrip-container">
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                        <label for="subscribe">Quiere suscribirse a nuestra newsletter?</label>
+                    </div>
+
+                    <div class="equipo-container">
+                        <label class="equipo-label" for="team">Equipo favorito:</label>
+                        <div class="equipo-radios">
+                            <input type="radio" name="team" id="team1" value="Athetic" checked>
+                            <label for="team1">Athletic</label>
+                            <input type="radio" name="team" id="team2" value="Real">
+                            <label for="team2">Real sociedad</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="contact-button">
+                    <button type="submit" name="send">Enviar</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li>
+                <a href="https://linkedin.com">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://x.com">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>

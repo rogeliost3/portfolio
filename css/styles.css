@@ -1,0 +1,325 @@
+/* COMUNES */
+
+
+/* defaults */
+
+* { margin:0;
+    padding:0;
+    padding-inline-start: 0;
+    width:100%;
+    box-sizing: border-box;
+    font-size:12px;
+    font-weight: normal;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:black;
+}
+
+
+a {
+    color:black;
+}
+
+li.active {
+    border:solid black 1px;
+    font-weight: bold;
+}
+
+body {
+    min-width: 360px;
+}
+
+
+/* header */
+
+header h2 {
+    background-color: rgb(129, 173, 123);
+    height:3rem;
+    margin-top:2rem;
+    padding-left:2rem;
+    display:flex;
+    align-items: center; /* centrado vertical en su propia caja */
+    justify-content: left; /* alineacion horizontal en su propia caja */
+}
+
+header nav {
+    width: 100%;
+    height:100px;
+    padding:1rem;
+    border-radius:10px;
+}
+
+header nav p {
+    text-align: center;
+    margin:auto;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    font-weight:bold;
+}
+
+header nav ul {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    width:100%;
+    justify-content:center;
+    list-style-type: none;
+}
+
+header nav ul li {
+    background-color: #73a258;
+    border-radius:10px;
+    margin: 0 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    
+    padding: 15px;
+}
+
+
+/* footer */
+
+footer ul {
+    margin: 15px;
+    display: flex;
+    width:10%;
+    justify-content:left;
+    list-style-type: none;
+}
+
+footer ul li {
+    text-align: left;
+}
+
+
+
+
+/* INDEX */
+
+
+/* profile */
+
+#profile {
+    background-color: #b5dbb2;
+    display:flex;
+    padding:6px;
+    flex:wrap;
+}
+
+#foto {
+    padding:1rem;
+    width:50%;
+}
+
+#foto img {
+    background-color: #956060;
+    width:100%;
+    padding:1px;
+    border-radius:50%;
+}
+
+#info {
+    padding:1rem;
+        width: 100%;
+}
+
+.info-title {
+    font-family:fantasy;
+    font-size:medium;
+    font-weight:lighter;
+    padding:1rem;
+}
+
+.info-text {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size:small;
+    font-weight:lighter;
+    text-align: justify;
+    padding:1rem;
+}
+
+
+
+
+/* CONTACTS */ 
+
+
+/* formulario */
+
+#contact {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size:small;
+    font-weight:lighter;
+    text-align: left;
+    padding:0 10%;
+    background-color:#b5dbb2;
+}
+
+#contact-form {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+}
+
+.contact-data {
+    max-width:45%; /* tamaño relativo */
+    min-width:260px; /* tamaño absoluto */
+    margin: 5% 2%;
+}
+
+.contact-opt {
+    max-width: 45%;
+    margin: 5% 2%;
+}
+
+.contact-button {
+    max-width:50%;
+    display:flex;
+    justify-content: center;
+    margin: 5% 0;
+}
+
+.contact-button button {
+    height: 3rem;
+    max-width: 60%;
+}
+
+#contact-form fieldset {
+    background-color: #73a258;
+    border: black, 1px, solid;
+    margin:2rem auto;
+    width:80%;
+    padding:2% 4%;
+}
+
+#contact-form fieldset div {
+    padding-bottom:1rem;
+}
+
+#contact-form fieldset legend{
+    background-color: #458d1b;
+    width:60%;
+    padding-left: 3%;
+}
+
+#contact-form input {
+    display:inline-block;
+    height:2rem;
+    border-radius: 5px;
+}
+
+.language-container select {
+    height:2rem;
+    border-radius: 5px;
+}
+
+.subscrip-container {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    min-width:260px;
+}
+  
+.subscrip-container input[type="checkbox"] {
+    margin: 0 5px 0 0; 
+    width:1rem;
+    height:2rem;
+}
+
+.equipo-radios{ 
+    display:flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.equipo-radios label {
+    margin: 0 3px 0 10px;
+}
+
+.equipo-radios input[type="radio"] {
+    margin: 0 3px 0 10px;
+    width:1rem;
+}
+
+
+
+
+/* PROJECTS */
+
+
+/*cards*/
+
+.cards-list {
+    display:flex; /* flex para distribucion de tarjetas */
+    flex-wrap:wrap;
+    justify-content:space-around;
+    background-color: #b5dbb2;
+}
+
+.card {
+    display:flex; /* flujo vertical de los elementos dentro de la card */
+    flex-direction: column;
+    margin:1rem 0.5rem;
+    border-radius: 2rem;
+    border:1px rgb(0, 0, 0) solid;
+    background-color: rgb(173, 216, 142);
+    overflow: hidden;
+    height:460px; /* altura prefijada para que el boton se ancle en la parte de abajo */
+}
+
+.card h3 { /* titulo inferior de tarjeta */
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 1rem;
+    padding-top:1rem;
+}
+
+.card p { /* texto inferior de tarjeta */
+    margin:0 5%;
+    width:90%;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: medium;
+    text-align: left;
+}
+
+.card a { /* contenedor del boton inferior de tarjeta */    
+    margin-top: auto; /* autocalculo del margen superior para que el boton se ancle abajo */
+    margin-bottom:1.5rem;
+}
+
+.card a button {
+    display:block;
+    width:50%;
+    margin: 0 auto;
+    padding:0.5rem;
+}
+
+
+/* media querys projects */
+
+@media    (min-width: 1101px) and (max-width: 2048px)  {
+    .card { width: 20%; }
+}
+
+@media    (min-width: 711px) and (max-width: 1100px)  {
+    .card { width: 25%; height:400px; }
+    .card p {font-size:0.8rem;}
+}
+
+@media    (min-width: 381px) and (max-width: 710px)  {
+    .card { width: 40%; height:400px;}
+    .card p {font-size: 0.8rem;}
+} 
+
+@media    (min-width: 260px) and (max-width: 380px)  {
+    .card { width: 90%; }
+    .card p {font-size: 1rem;}
+} 
+
+@media    (min-width: 1px) and (max-width: 259px)  {
+    .card { width: 90%; height:300px; }
+    .card p {font-size: .6rem;}
+    .card a button { padding:0.2rem; }
+    .card h3 { padding-bottom:0.3rem;padding-top:0.3rem;}
+}
