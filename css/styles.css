@@ -1,5 +1,9 @@
 /* COMUNES */
-
+body {
+    padding-bottom: 0;
+    min-width: 500px;
+    padding: 5% 7% 2%;
+}
 
 /* defaults */
 
@@ -7,10 +11,7 @@
     padding:0;
     padding-inline-start: 0;
     width:100%;
-    border: 1px red solid;
     box-sizing: border-box;
-    font-size:12px;
-    font-weight: normal;
     text-decoration: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color:black;
@@ -25,16 +26,17 @@ li.active {
     border:solid black 3px;
 }
 
-body {
-    min-width: 360px;
-}
+
 
 
 /* header */
 
+
 header h2 {
     background-color: rgb(129, 173, 123);
     height:3rem;
+    font-size: 0.8em;
+    font-weight: normal;
     padding-left:1rem;
     display:flex;
     align-items: center; /* centrado vertical en su propia caja */
@@ -71,14 +73,23 @@ header nav ul {
 header nav ul li {
     background-color: #73a258;
     border-radius:10px;
+    
     margin: 0 4%;
     text-align: center;
-    min-width:25%;
+    min-width:100px;
     padding: 5px 15px;
+    -webkit-box-shadow: 4px 4px 7px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 7px 0px rgba(0,0,0,0.75);
+    box-shadow: 4px 4px 7px 0px rgba(0,0,0,0.75);
 }
 
 
 /* footer */
+
+footer {
+    background-color: lightgray;
+    margin-top:-15px
+}
 
 footer ul {
     margin: 15px;
@@ -90,6 +101,7 @@ footer ul {
 
 footer ul li {
     text-align: left;
+    margin-right: 30%;
 }
 
 
@@ -102,15 +114,59 @@ footer ul li {
 
 #profile {
     background-color: #b5dbb2;
-    display:flex;
-    padding:6px;
-    flex:wrap;
+    display: flex; 
+    flex-wrap: wrap; 
+    flex-direction: column; 
+    align-content: center
 }
 
+#presentacion-container {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    align-content:center;
+    padding: 0 6%;
+}
+#presentacion-box {
+    width:50%;
+}
+#presentacion-box h1 {
+    margin-bottom: -10%; 
+    width:195%;
+    text-align: right;
+
+    font-size:1.5rem;
+    font-weight:bold;
+    padding:1rem;
+}
+#presentacion-box img {
+    float:left;
+    width:75%; 
+    max-width: 150px;
+    margin-right: 13px; 
+    shape-outside: circle(50%);
+    border-radius: 50%;
+    border:2px black solid;
+    -webkit-box-shadow: 10px 10px 28px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 28px -1px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 28px -1px rgba(0,0,0,0.75);
+}
+#presentacion-box p {
+    background-color: antiquewhite; 
+    width:195%;
+    text-align: justify;
+    margin-top: 15%;
+    padding: 3% 8%;
+    -webkit-box-shadow: 10px 10px 28px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 28px -1px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 28px -1px rgba(0,0,0,0.75);
+}
+
+/*
 #foto {
     padding:1rem;
     width:50%;
-}
+}*/
 
 #foto img {
     background-color: #956060;
@@ -120,17 +176,12 @@ footer ul li {
 }
 
 #info {
-    padding:1rem;
-        width: 100%;
+    padding:0 8% 0 6%;
 }
 
 .info-title {
-    font-family:fantasy;
-    font-size:medium;
-    font-weight:lighter;
-    padding:1rem;
+    margin-top:8%;
 }
-
 .info-text {
     font-family: Helvetica, Arial, sans-serif;
     font-size:medium;
@@ -303,21 +354,22 @@ footer ul li {
 
 @media    (min-width: 1101px) and (max-width: 2048px)  {
     .card { width: 20%; }
+    .card p {font-size:1rem;}
 }
 
 @media    (min-width: 711px) and (max-width: 1100px)  {
     .card { width: 25%; height:400px; }
-    .card p {font-size:1.1rem;}
+    .card p {font-size:0.8rem;}
 }
 
 @media    (min-width: 381px) and (max-width: 710px)  {
     .card { width: 40%; height:400px;}
-    .card p {font-size: 1.1rem;}
+    .card p {font-size: 0.8rem;}
 } 
 
 @media    (min-width: 260px) and (max-width: 380px)  {
     .card { width: 90%; }
-    .card p {font-size: 1.5rem;}
+    .card p {font-size: 0.95rem;}
 } 
 
 @media    (min-width: 1px) and (max-width: 259px)  {
