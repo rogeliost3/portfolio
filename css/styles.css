@@ -1,4 +1,17 @@
 /* COMUNES */
+:root {
+    --color-fondo: #6E6E6E;
+    --color-boton: #BAFF39;
+    --color-breadcrumb: rgb(173, 173, 142);
+    --color-fondo-tarjeta: rgb(173, 173, 142);
+    --color-fondo-formulario:rgb(173, 173, 142);
+    --color-bordes: black;
+    --color-texto: black;
+    --color-foto: #956060;
+    --color-footer: #AAA;
+    --color-presentacion: #c9cd86;
+}
+
 body {
     padding-bottom: 0;
     min-width: 500px;
@@ -7,40 +20,40 @@ body {
 
 /* defaults */
 
-* { margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     padding-inline-start: 0;
-    width:100%;
+    width: 100%;
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color:black;
+    color: var(--color-texto);
 }
-
 
 a {
-    color:black;
+    color: var(--color-texto);
 }
-
-li.active {
-    border:solid black 3px;
-}
-
-
 
 
 /* header */
 
 
+header li.active {
+    border: solid var(--color-bordes) 3px;
+}
+
 header h2 {
-    background-color: rgb(129, 173, 123);
-    height:3rem;
+    background-color: var(--color-breadcrumb);
+    height: 3rem;
     font-size: 0.8em;
     font-weight: normal;
-    padding-left:1rem;
-    display:flex;
-    align-items: center; /* centrado vertical en su propia caja */
-    justify-content: left; /* alineacion horizontal en su propia caja */
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+    /* centrado vertical en su propia caja */
+    justify-content: left;
+    /* alineacion horizontal en su propia caja */
 }
 
 header h2 a {
@@ -49,53 +62,54 @@ header h2 a {
 
 header nav {
     width: 100%;
-    background-color: #b5dbb2;
-    padding:1rem;
-    border-radius:15px 15px 0 0;
+    background-color: var(--color-fondo);
+    padding: 1rem;
+    border-radius: 15px 15px 0 0;
 }
 
 header nav p {
     text-align: center;
-    margin:auto;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 4% auto 4%;
+    font-family: "Josefin Sans", Geneva, Tahoma, sans-serif;
     font-size: 2rem;
-    font-weight:bold;
+    letter-spacing: 1rem;
 }
 
 header nav ul {
     margin-top: 15px;
     margin-bottom: 15px;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     list-style-type: none;
 }
 
 header nav ul li {
-    background-color: #73a258;
-    border-radius:10px;
-    
+    background-color: var(--color-boton);
+    border-radius: 10px;
+
     margin: 0 4%;
     text-align: center;
-    min-width:100px;
+    min-width: 100px;
     padding: 5px 15px;
-    -webkit-box-shadow: 4px 4px 7px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 4px 4px 7px 0px rgba(0,0,0,0.75);
-    box-shadow: 4px 4px 7px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 4px 4px 7px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px 4px 7px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 4px 4px 7px 0px rgba(0, 0, 0, 0.75);
 }
 
 
 /* footer */
 
 footer {
-    background-color: lightgray;
-    margin-top:-15px
+    background-color: var(--color-footer);
+    margin-top: -15px;
 }
 
 footer ul {
     margin: 15px;
     display: flex;
-    width:10%;
-    justify-content:left;
+    width: 10%;
+    height:2rem;
+    justify-content: left;
     list-style-type: none;
 }
 
@@ -104,6 +118,10 @@ footer ul li {
     margin-right: 30%;
 }
 
+.fa-brands {
+    width:auto;
+    height:100%;
+}
 
 
 
@@ -113,53 +131,58 @@ footer ul li {
 /* profile */
 
 #profile {
-    background-color: #b5dbb2;
-    display: flex; 
-    flex-wrap: wrap; 
-    flex-direction: column; 
+    background-color: var(--color-fondo);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     align-content: center
 }
 
 #presentacion-container {
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
-    flex-direction:row;
-    align-content:center;
+    flex-direction: row;
+    align-content: center;
     padding: 0 6%;
 }
+
 #presentacion-box {
-    width:50%;
+    width: 50%;
 }
+
 #presentacion-box h1 {
-    margin-bottom: -10%; 
-    width:195%;
+    margin-bottom: -16%;
+    width: 195%;
     text-align: right;
 
-    font-size:1.5rem;
-    font-weight:bold;
-    padding:1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem 0;
 }
+
 #presentacion-box img {
-    float:left;
-    width:75%; 
+    float: left;
+    width: 75%;
     max-width: 150px;
-    margin-right: 13px; 
+    margin-right: 30px;
+    margin-bottom:10px;
     shape-outside: circle(50%);
     border-radius: 50%;
-    border:2px black solid;
-    -webkit-box-shadow: 10px 10px 28px -1px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 28px -1px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 28px -1px rgba(0,0,0,0.75);
+    border: 3px var(--color-bordes) solid;
+    -webkit-box-shadow: 10px 10px 28px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 28px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 28px -1px rgba(0, 0, 0, 0.75);
 }
+
 #presentacion-box p {
-    background-color: antiquewhite; 
-    width:195%;
+    background-color: var(--color-presentacion);
+    width: 195%;
     text-align: justify;
     margin-top: 15%;
     padding: 3% 8%;
-    -webkit-box-shadow: 10px 10px 28px -1px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 28px -1px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 28px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 28px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 28px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 28px -1px rgba(0, 0, 0, 0.75);
 }
 
 /*
@@ -169,68 +192,74 @@ footer ul li {
 }*/
 
 #foto img {
-    background-color: #956060;
-    width:100%;
-    padding:1px;
-    border-radius:50%;
+    background-color: var(--color-foto);
+    width: 100%;
+    padding: 1px;
+    border-radius: 50%;
 }
 
 #info {
-    padding:0 8% 0 6%;
+    padding: 0 8% 0 6%;
 }
 
 .info-title {
-    margin-top:8%;
+    margin-top: 8%;
 }
+
 .info-text {
     font-family: Helvetica, Arial, sans-serif;
-    font-size:medium;
-    font-weight:lighter;
+    font-size: medium;
+    font-weight: lighter;
     text-align: justify;
-    padding:1rem;
+    padding: 1rem;
+    margin-bottom: 5%;
 }
 
 
 
 
-/* CONTACTS */ 
+/* CONTACTS */
 
 
 /* formulario */
 
+
 #contact {
     font-family: Helvetica, Arial, sans-serif;
-    font-size:small;
-    font-weight:lighter;
+    font-size: small;
+    font-weight: lighter;
     text-align: left;
-    padding:0 10%;
-    background-color:#b5dbb2;
+    padding: 0 10%;
+    background-color: var(--color-fondo);
 }
 
 #contact-form {
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:space-around;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .contact-data {
-    max-width:45%; /* tamaño relativo */
-    min-width:260px; /* tamaño absoluto */
+    max-width: 45%;
+    /* tamaño relativo */
+    min-width: 260px;
+    /* tamaño absoluto */
     margin: 5% 2%;
-    border-radius: 15px 15px 0 0;
+    border-radius: 15px;
 }
 
 .contact-opt {
     max-width: 45%;
     margin: 5% 2%;
-    border-radius: 15px 15px 0 0;
+    border-radius: 15px;
 }
 
 .contact-button {
-    max-width:50%;
-    display:flex;
+    max-width: 50%;
+    display: flex;
     justify-content: center;
     margin: 5% 0;
+    border-radius: 15px;
 }
 
 .contact-button button {
@@ -239,51 +268,51 @@ footer ul li {
 }
 
 #contact-form fieldset {
-    background-color: #73a258;
+    background-color: var(--color-fondo-formulario);
     border: black, 1px, solid;
-    
-    margin:2rem auto;
-    width:80%;
-    padding:2% 4%;
+
+    margin: 2rem auto;
+    width: 80%;
+    padding: 2% 4%;
 }
 
 #contact-form fieldset div {
-    padding-bottom:1rem;
+    padding-bottom: 1rem;
 }
 
-#contact-form fieldset legend{
+#contact-form fieldset legend {
     background-color: #458d1b;
-    width:60%;
+    width: 60%;
     padding-left: 3%;
 }
 
 #contact-form input {
-    display:inline-block;
-    height:2rem;
+    display: inline-block;
+    height: 2rem;
     border-radius: 5px;
 }
 
 .language-container select {
-    height:2rem;
+    height: 2rem;
     border-radius: 5px;
 }
 
 .subscrip-container {
     display: flex;
-    align-items: center; 
-    justify-content: center; 
-    min-width:260px;
-}
-  
-.subscrip-container input[type="checkbox"] {
-    margin: 0 5px 0 0; 
-    width:1rem;
-    height:2rem;
+    align-items: center;
+    justify-content: center;
+    min-width: 260px;
 }
 
-.equipo-radios{ 
-    display:flex;
-    align-items: center; 
+.subscrip-container input[type="checkbox"] {
+    margin: 0 5px 0 0;
+    width: 1rem;
+    height: 2rem;
+}
+
+.equipo-radios {
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
@@ -293,7 +322,7 @@ footer ul li {
 
 .equipo-radios input[type="radio"] {
     margin: 0 3px 0 10px;
-    width:1rem;
+    width: 1rem;
 }
 
 
@@ -305,76 +334,118 @@ footer ul li {
 /*cards*/
 
 .cards-list {
-    display:flex; /* flex para distribucion de tarjetas */
-    flex-wrap:wrap;
-    justify-content:space-around;
-    background-color: #b5dbb2;
+    display: flex;
+    /* flex para distribucion de tarjetas */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: var(--color-fondo);
 }
 
 .card {
-    display:flex; /* flujo vertical de los elementos dentro de la card */
+    display: flex;
+    /* flujo vertical de los elementos dentro de la card */
     flex-direction: column;
-    margin:1rem 0.5rem;
+    margin: 1rem 0.5rem;
     border-radius: 2rem;
-    border:1px rgb(0, 0, 0) solid;
-    background-color: rgb(173, 216, 142);
+    border: 1px var(--color-bordes) solid;
+    background-color: var(--color-fondo-tarjeta);
     overflow: hidden;
-    height:460px; /* altura prefijada para que el boton se ancle en la parte de abajo */
+    height: 460px;
+    /* altura prefijada para que el boton se ancle en la parte de abajo */
 }
 
-.card h3 { /* titulo inferior de tarjeta */
+.card h3 {
+    /* titulo inferior de tarjeta */
     text-align: center;
     font-weight: bold;
     padding-bottom: 1rem;
-    padding-top:1rem;
+    padding-top: 1rem;
 }
 
-.card p { /* texto inferior de tarjeta */
-    margin:0 5%;
-    width:90%;
+.card p {
+    /* texto inferior de tarjeta */
+    margin: 0 5%;
+    width: 90%;
     font-family: Helvetica, Arial, sans-serif;
     font-size: medium;
     text-align: left;
 }
 
-.card a { /* contenedor del boton inferior de tarjeta */    
-    margin-top: auto; /* autocalculo del margen superior para que el boton se ancle abajo */
-    margin-bottom:1.5rem;
+.card a {
+    /* contenedor del boton inferior de tarjeta */
+    margin-top: auto;
+    /* autocalculo del margen superior para que el boton se ancle abajo */
+    margin-bottom: 1.5rem;
 }
 
 .card a button {
-    display:block;
-    width:50%;
+    display: block;
+    width: 50%;
     margin: 0 auto;
-    padding:0.5rem;
+    padding: 0.5rem;
 }
 
 
 /* media querys projects */
 
-@media    (min-width: 1101px) and (max-width: 2048px)  {
-    .card { width: 20%; }
-    .card p {font-size:1rem;}
+@media (min-width: 1101px) and (max-width: 2048px) {
+    .card {
+        width: 20%;
+    }
+
+    .card p {
+        font-size: 1rem;
+    }
 }
 
-@media    (min-width: 711px) and (max-width: 1100px)  {
-    .card { width: 25%; height:400px; }
-    .card p {font-size:0.8rem;}
+@media (min-width: 711px) and (max-width: 1100px) {
+    .card {
+        width: 25%;
+        height: 400px;
+    }
+
+    .card p {
+        font-size: 0.8rem;
+    }
 }
 
-@media    (min-width: 381px) and (max-width: 710px)  {
-    .card { width: 40%; height:400px;}
-    .card p {font-size: 0.8rem;}
-} 
+@media (min-width: 381px) and (max-width: 710px) {
+    .card {
+        width: 40%;
+        height: 400px;
+    }
 
-@media    (min-width: 260px) and (max-width: 380px)  {
-    .card { width: 90%; }
-    .card p {font-size: 0.95rem;}
-} 
+    .card p {
+        font-size: 0.8rem;
+    }
+}
 
-@media    (min-width: 1px) and (max-width: 259px)  {
-    .card { width: 90%; height:300px; }
-    .card p {font-size: .6rem;}
-    .card a button { padding:0.2rem; }
-    .card h3 { padding-bottom:0.3rem;padding-top:0.3rem;}
+@media (min-width: 260px) and (max-width: 380px) {
+    .card {
+        width: 90%;
+    }
+
+    .card p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (min-width: 1px) and (max-width: 259px) {
+    .card {
+        width: 90%;
+        height: 300px;
+    }
+
+    .card p {
+        font-size: .6rem;
+    }
+
+    .card a button {
+        padding: 0.2rem;
+    }
+
+    .card h3 {
+        padding-bottom: 0.3rem;
+        padding-top: 0.3rem;
+    }
 }
