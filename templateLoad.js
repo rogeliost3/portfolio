@@ -32,3 +32,16 @@ function marcarElementoActivo() {
         }
     });
 }
+
+//evitar el zoom con los dedos en movil,TODO probarlo si touch-action: pan-y; no funciona
+document.addEventListener('gesturestart', function (e) {
+    e.preventDefault();
+});
+
+document.addEventListener('gesturechange', function (e) {
+    e.preventDefault();
+});
+
+document.addEventListener('gestureend', function (e) {
+    e.preventDefault();
+});
