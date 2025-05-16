@@ -1,0 +1,101 @@
+{
+    "arquitectura": [
+      {
+        "titulo": "Vivienda Unifamiliar Moderna",
+        "descripcion": "Proyecto de vivienda eficiente y sostenible.",
+        "año": 2023,
+        "lugar": "Madrid",
+        "imagen": "vivienda-moderna.png"
+      },
+      {
+        "titulo": "Reforma Integral Edificio Histórico",
+        "descripcion": "Rehabilitación de fachada y estructura.",
+        "año": 2022,
+        "lugar": "Toledo",
+        "imagen": "reforma-historica.jpg"
+      }
+    ],
+    "urbanismo": [
+      {
+        "titulo": "Plan Territorial Especial de Ordenación de Actividades e Instalaciones Recreativas, Divulgativas, Científicas y Deportivas. PTE-36",
+        "descripcion": "Herramientas: Microstation v8, AutoCAD MAP 2, AutoCAD2006",
+        "año": "2007 - 2009",
+        "lugar": "Gran Canaria",
+        "imagen": "pag01.png"
+      },
+      {
+        "titulo": "Parque del Palmeral del Oasis de Maspalomas",
+        "descripcion": "Herramientas: AutoCAD R14, Photoshop 7.",
+        "año": 1999,
+        "lugar": "Gran Canaria",
+        "imagen": "pag02.png"
+      },      
+      {
+        "titulo": "Anteproyecto de reforma y ampliación del jardín botánico Viera y Clavijo",
+        "descripcion": "Herramientas: AutoCAD R14, Photoshop 7, Microstation v8.",
+        "año": "1998-2001",
+        "lugar": "Gran Canaria",
+        "imagen": "pag02b.png"
+      },
+      {
+        "titulo": "Plan Especial del Paisaje Protegido de La Geria.",
+        "descripcion": "Herramientas: AutoCAD 2004, AutoCAD MAP.",
+        "año": 1999,
+        "lugar": "Lanzarote",
+        "imagen": "pag03.png"
+      },      
+      {
+        "titulo": "Ordenación del litoral en el ámbito de Santa Agüeda - Montaña la Arena.",
+        "descripcion": "Herramientas: AutoCAD 2004, Photoshop 7.",
+        "año": 2000,
+        "lugar": "San Bartolomé de Tirajana, Gran Canaria",
+        "imagen": "pag04.png"
+      },      
+ 
+      {
+        "titulo": "Plan Especial del Cono Sur de Las Palmas de Gran Canaria... y otros",
+        "descripcion": "Herramientas: AutoCAD 2002, Photoshop 7.",
+        "año": 2001,
+        "lugar": "Las Palmas de Gran Canaria",
+        "imagen": "pag05.png"
+      },      
+      {
+        "titulo": "Plan Parcial de Marzagán",
+        "descripcion": "Herramientas: AutoCAD R14, Photoshop 7.",
+        "año": 2008,
+        "lugar": "Las Palmas de Gran Canaria",
+        "imagen": "pag06.png"
+      },      
+      {
+        "titulo": "Normas subsidiarias de planeamiento de Moya.",
+        "descripcion": "Herramientas: AutoCAD MAP, Architectural Desktop 2006, Microstation v8.",
+        "año": 2000,
+        "lugar": "Gran Canaria",
+        "imagen": "pag07.png"
+      },
+      {
+        "titulo": "Plan General del municipio de Valsequillo",
+        "descripcion": "Herramientas: AutoCAD R14 / 2002.",
+        "año": 2001,
+        "lugar": "Las Palmas de Gran Canaria",
+        "imagen": "pag08.png"
+      }
+    ],
+    "informatica": [
+      {
+        "titulo": "Gestor de Proyectos Técnicos",
+        "descripcion": "Aplicación web para organización de documentación de obra.",
+        "año": 2024,
+        "lugar": "Proyecto personal",
+        "imagen": "gestor-proyectos.png"
+      },
+      {
+        "titulo": "Dashboard Urbanístico",
+        "descripcion": "Panel de análisis de datos urbanos con JavaScript y Chart.js.",
+        "año": 2023,
+        "lugar": "Proyecto freelance",
+        "imagen": "dashboard-urbanistico.jpg"
+      }
+    ]
+  }
+  

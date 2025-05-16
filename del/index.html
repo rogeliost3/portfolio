@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio Profesional</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <button
+      class="toggle-mode"
+      onclick="document.body.classList.toggle('dark-mode')"
+    >
+      <i class="fa-solid fa-circle-half-stroke"></i>
+    </button>
+    <main>
+      <section class="intro">
+        <div class="intro-content">
+          <img
+            src="./assets/mi-foto2.png"
+            alt="Foto personal"
+            class="profile-pic"
+          />
+          <div class="text">
+            <h1>Rogelio Suárez Tejera</h1>
+            <p>
+              <strong>Profesión:</strong> Delineante especializado en
+              edificación y urbanismo.
+            </p>
+            <p>
+              <strong>Experiencia:</strong> Más de 12 años en estudios técnicos
+              desarrollando proyectos de obra nueva, rehabilitación,
+              planeamiento y urbanismo.
+            </p>
+            <p>
+              <strong>Competencias:</strong> Delineación técnica, AutoCAD y
+              Architectural Desktop, Photoshop e Indesing.
+            </p>
+            <p>
+              <strong>Titulación:</strong> 
+              Técnico Superior en Delineación de Edificios y Obras.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="trabajos">
+        <h2>Proyectos Arquitectónicos</h2>
+        <div class="galeria" id="arquitectura"></div>
+
+        <h2>Proyectos de Urbanismo</h2>
+        <div class="galeria" id="urbanismo"></div>
+      </section>
+
+      <section class="informatica">
+        <h2>Proyectos de Informática</h2>
+        <div class="galeria" id="informatica"></div>
+      </section>
+    </main>
+
+    <div class="modal" id="modal" onclick="cerrarModal()">
+      <img id="modal-img" />
+    </div>
+
+    <script>
+      const categorias = [
+        { id: "arquitectura", carpeta: "assets/planos/arquitectura" },
+        { id: "urbanismo", carpeta: "assets/planos/urbanismo" },
+        { id: "informatica", carpeta: "assets/desarrollo" },
+      ];
+
+      fetch("proyectos.json")
+        .then((res) => res.json())
+        .then((data) => {
+          categorias.forEach((categoria) => {
+            const contenedor = document.getElementById(categoria.id);
+            data[categoria.id].forEach((proyecto) => {
+              const item = document.createElement("div");
+              item.className = "item";
+
+              const img = document.createElement("img");
+              img.src = `${categoria.carpeta}/${proyecto.imagen}`;
+              img.alt = proyecto.titulo;
+              img.onclick = () => ampliar(img);
+
+              const overlay = document.createElement("div");
+              overlay.className = "overlay";
+
+              const titulo = document.createElement("h4");
+              titulo.textContent = proyecto.titulo;
+              titulo.onclick = () => ampliar(img);
+
+              const desc = document.createElement("p");
+              desc.innerHTML = `${proyecto.descripcion || ""}${
+                proyecto.año ? " | " + proyecto.año : ""
+              }${proyecto.lugar ? " | " + proyecto.lugar : ""}`;
+
+              overlay.appendChild(titulo);
+              overlay.appendChild(desc);
+              item.appendChild(img);
+              item.appendChild(overlay);
+              contenedor.appendChild(item);
+            });
+          });
+        });
+
+      function ampliar(img) {
+        const modal = document.getElementById("modal");
+        const modalImg = document.getElementById("modal-img");
+        modalImg.src = img.src;
+        modal.classList.add("abierto");
+      }
+
+      function cerrarModal() {
+        document.getElementById("modal").classList.remove("abierto");
+      }
+    </script>
+  </body>
+</html>
