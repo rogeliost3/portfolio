@@ -1,0 +1,111 @@
+[
+  {
+    "id": 1,
+    "year": 1993,
+    "type": "ESTUDIOS",
+    "description": "Graduación en secundaria",
+    "image": "assets/icons/study.png",
+    "extra1": "",
+    "extra2": ""
+  },
+  {
+    "id": 2,
+    "year": 1994,
+    "type": "FORMACION",
+    "description": "Curso de AutoCAD",
+    "image": "assets/icons/project.png",
+    "extra1": "",
+    "extra2": ""
+  },
+  {
+    "id": 3,
+    "year": 1998,
+    "type": "FORMACION",
+    "description": "Curso de AutoCAD",
+    "image": "assets/icons/course.png",
+    "extra1": "",
+    "extra2": ""
+  },
+  {
+    "id": 4,
+    "year": 2003,
+    "type": "FORMACION",
+    "description": "Curso de AutoCAD",
+    "image": "assets/icons/project.png",
+    "extra1": "",
+    "extra2": ""
+  },
+  {
+    "id": 5,
+    "year": 2008,
+    "type": "FORMACION",
+    "description": "Curso de AutoCAD",
+    "image": "assets/icons/course.png",
+    "extra1": "",
+    "extra2": ""
+  },
+  {
+    "id": 6,
+    "year": 2009,
+    "type": "TRABAJO",
+    "description": "Primer empleo como delineante",
+    "image": "assets/icons/work.png",
+    "extra1": "",
+    "extra2": ""
+  },
+  {
+    "id": 7,
+    "year": 2010,
+    "type": "PROYECTO",
+    "description": "Diseño urbano en Madrid",
+    "image": "assets/icons/project.png",
+    "extra1": "",
+    "extra2": ""
+  },
+  {
+    "id": 8,
+    "year": 2014,
+    "type": "ESTUDIOS",
+    "description": "Máster en urbanismo",
+    "image": "assets/icons/study.png",
+    "extra1": "",
+    "extra2": ""
+  },
+  {
+    "id": 9,
+    "year": 2015,
+    "type": "ESTUDIOS",
+    "description": "Máster en urbanismo",
+    "image": "assets/icons/certificate.png",
+    "extra1": "",
+    "extra2": ""
+  },
+  {
+    "id": 10,
+    "year": 2016,
+    "type": "ESTUDIOS",
+    "description": "Máster en urbanismo",
+    "image": "assets/icons/course.png",
+    "extra1": "",
+    "extra2": ""
+  },
+  {
+    "id": 11,
+    "year": 2024,
+    "type": "ESTUDIOS",
+    "description": "Máster en urbanismo",
+    "image": "assets/icons/course.png",
+    "extra1": "",
+    "extra2": ""
+  },
+  {
+    "id": 12,
+    "year": 2025,
+    "type": "ESTUDIOS",
+    "description": "Máster en urbanismo",
+    "image": "assets/icons/course.png",
+    "extra1": "",
+    "extra2": ""
+  }
+
+]
